@@ -1,0 +1,83 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/master/.nvm/versions/node/v6.3.1/bin/node',
+1 verbose cli   '/home/master/.nvm/versions/node/v6.3.1/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.7
+3 info using node@v6.3.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/master/workspace-node/las-converter',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/master/.npm/las-converter/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /home/master/.npm correctMkdir not in flight; initializing
+10 info lifecycle las-converter@1.0.0~prepublish: las-converter@1.0.0
+11 silly lifecycle las-converter@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/master/.npm/las-converter/1.0.0/package.tgz',
+12 verbose tar pack   '/home/master/workspace-node/las-converter' ]
+13 verbose tarball /home/master/.npm/las-converter/1.0.0/package.tgz
+14 verbose folder /home/master/workspace-node/las-converter
+15 verbose addLocalTarball adding from inside cache /home/master/.npm/las-converter/1.0.0/package.tgz
+16 verbose correctMkdir /home/master/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd las-converter@1.0.0
+18 verbose afterAdd /home/master/.npm/las-converter/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /home/master/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/master/.npm/las-converter/1.0.0/package/package.json written
+21 silly publish { name: 'las-converter',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'Generador de Archivos LAS',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   author: { name: 'Carlos Marcano' },
+21 silly publish   license: 'ISC',
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/srcarlos/las-converter.git' },
+21 silly publish   keywords: [ 'las', 'well', 'converter', 'LOG', 'ASCII', 'CWLS' ],
+21 silly publish   bugs: { url: 'https://github.com/srcarlos/las-converter/issues' },
+21 silly publish   homepage: 'https://github.com/srcarlos/las-converter#readme',
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   _id: 'las-converter@1.0.0',
+21 silly publish   _shasum: 'a607e5986a2228ac94432f706a617aff2a7d5d27',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name las-converter
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'las-converter',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'las-converter',
+26 silly mapToRegistry   name: 'las-converter',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/las-converter
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /home/master/.npm/las-converter/1.0.0/package.tgz
+30 verbose stack Error: auth required for publishing
+30 verbose stack     at CachingRegistryClient.publish (/home/master/.nvm/versions/node/v6.3.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:30:14)
+30 verbose stack     at /home/master/.nvm/versions/node/v6.3.1/lib/node_modules/npm/lib/publish.js:138:14
+30 verbose stack     at mapToRegistry (/home/master/.nvm/versions/node/v6.3.1/lib/node_modules/npm/lib/utils/map-to-registry.js:62:3)
+30 verbose stack     at publish_ (/home/master/.nvm/versions/node/v6.3.1/lib/node_modules/npm/lib/publish.js:107:3)
+30 verbose stack     at Array.<anonymous> (/home/master/.nvm/versions/node/v6.3.1/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+30 verbose stack     at LOOP (/home/master/.nvm/versions/node/v6.3.1/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+30 verbose stack     at LOOP (/home/master/.nvm/versions/node/v6.3.1/lib/node_modules/npm/node_modules/slide/lib/chain.js:14:28)
+30 verbose stack     at chain (/home/master/.nvm/versions/node/v6.3.1/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+30 verbose stack     at /home/master/.nvm/versions/node/v6.3.1/lib/node_modules/npm/lib/publish.js:73:5
+30 verbose stack     at RES (/home/master/.nvm/versions/node/v6.3.1/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+31 verbose cwd /home/master/workspace-node/las-converter
+32 error Linux 4.4.0-34-generic
+33 error argv "/home/master/.nvm/versions/node/v6.3.1/bin/node" "/home/master/.nvm/versions/node/v6.3.1/bin/npm" "publish"
+34 error node v6.3.1
+35 error npm  v3.10.7
+36 error code ENEEDAUTH
+37 error need auth auth required for publishing
+38 error need auth You need to authorize this machine using `npm adduser`
+39 verbose exit [ 1, true ]
